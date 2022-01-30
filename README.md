@@ -27,7 +27,7 @@ from causing merge conflicts at the domain level.
 
 ## How does it work
 We create four **spring boot** projects : ApiGateway, Command service, Query service and the Registry.
-Out object is : 
+Our object is : 
 ```
 "customer":{
     "id": "str",
@@ -50,7 +50,6 @@ Out object is :
 ![alt Create Customer](/assets/create.png)
 ![alt Done Creation](/assets/done.png)
 ![alt List](/assets/list.png)
-
 - In case there is a creation, the **Command Service** will send an event to the **Query Service** via _RabbitMq_ (the _logs_ Queue) so that it can update the ElasticSearch database.
 
 

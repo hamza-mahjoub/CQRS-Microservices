@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Registration Success</title>
+    <style type="text/css">
+        span {
+            display: inline-block;
+            width: 200px;
+            text-align: left;
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+            font-weight: bolder;
+        }
+        .form-wrapper {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div th:replace="header"></div>
+<div align="center" style="margin-top: 3vh" class="form-wrapper">
+    <h2>Registration Succeeded!</h2>
+    <span>id:</span><span th:text="${customer.id}"></span><br/>
+    <span>First Name:</span><span th:text="${customer.firstName}"></span><br/>
+    <span>Last Name:</span><span th:text="${customer.lastName}"></span><br/>
+    <span>E-mail:</span><span th:text="${customer.email}"></span><br/>
+    <span>Age:</span><span th:text="${customer.age}"></span><br/>
+    <span>Gender:</span><span th:text="${customer.gender}"></span><br/>
+</div>
+</body>
+</html>

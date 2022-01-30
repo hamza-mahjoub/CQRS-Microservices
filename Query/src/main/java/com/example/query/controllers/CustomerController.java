@@ -23,6 +23,11 @@ public class CustomerController {
         return customerList;
     }
 
+    @GetMapping("/deleteAll")
+    public void deleteAll() {
+        repository.deleteAll();
+    }
+
     @PostMapping("/saveCustomer")
     public int saveCustomer(@RequestBody List<Customer> customers) {
         repository.saveAll(customers);

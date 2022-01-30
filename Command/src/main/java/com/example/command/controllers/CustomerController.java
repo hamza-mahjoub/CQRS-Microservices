@@ -25,4 +25,9 @@ public class CustomerController {
         }
         return null;
     }
+
+    @GetMapping("/deleteAll")
+    public void deleteAll() {
+        repository.deleteAll();
+    }
 }

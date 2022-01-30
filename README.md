@@ -10,5 +10,5 @@ from causing merge conflicts at the domain level.
 
 
 ## Project Architecture
-
-![alt architecture](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+https://github.com/hamza-mahjoub/CQRS-Microservices.git
+![alt architecture](https://github.com/hamza-mahjoub/CQRS-Microservices/main/assets/architecture.png?raw=true)
